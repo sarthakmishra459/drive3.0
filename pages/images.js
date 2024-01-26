@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { Web3Provider } from "@ethersproject/providers";
 import Upload from "../artifacts/contracts/Upload.sol/Upload.json";
 import Display from '../components/Display';
-import { useAccount } from "./AccountContext";
+import { useAccount } from "../contexts/AccountContext";
 import { Contract } from "ethers";
 import { useRef } from "react";
 import axios from "axios";

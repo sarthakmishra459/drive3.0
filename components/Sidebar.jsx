@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import { CiImageOn } from "react-icons/ci";
 import React, { useState, useMemo } from "react";
 import { CiVault } from "react-icons/ci";
-import { useAccount } from "../pages/AccountContext";
+import { useAccount } from "../contexts/AccountContext";
 
 import {
   ArticleIcon,

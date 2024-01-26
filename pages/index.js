@@ -6,7 +6,7 @@ import Upload from "../artifacts/contracts/Upload.sol/Upload.json";
 import Display from '../components/Display';
 import { Contract } from "ethers";
 import { useRef } from "react";
-import { useAccount } from "./AccountContext";
+import { useAccount } from "../contexts/AccountContext";
 import axios from "axios";
 
 export default function Home() {
