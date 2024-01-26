@@ -9,8 +9,8 @@ import { useRef } from "react";
 import { useAccount } from "./AccountContext";
 import axios from "axios";
 
-const documents = () => {
-  const [Data, setdata] = useState('doc')
+const Documents = () => {
+  const [Data, setData] = useState('doc')
   const { account, setAccount } = useAccount();
   const [contract, setContract] = useState(null);
   const [provider, setProvider] = useState(null);
@@ -19,7 +19,7 @@ const documents = () => {
   const fileInputRef = useRef(null);
   useEffect(() => {
     // Function to load the provider and set contract
-    setdata('doc')
+    setData('doc')
     const loadProvider = async () => {
       try {
         // Create a Web3Provider from window.ethereum
@@ -141,4 +141,4 @@ const documents = () => {
   )
 };
 
-export default documents;
+export default Documents;

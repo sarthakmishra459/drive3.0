@@ -9,8 +9,8 @@ import { Contract } from "ethers";
 import { useRef } from "react";
 import axios from "axios";
 
-const images = () => {
-  const [Data, setdata] = useState('image')
+const Images = () => {
+  const [Data, setData] = useState('image')
   const { account, setAccount } = useAccount();
   const [contract, setContract] = useState(null);
   const [provider, setProvider] = useState(null);
@@ -19,7 +19,7 @@ const images = () => {
   const fileInputRef = useRef(null);
   useEffect(() => {
     // Function to load the provider and set contract
-    setdata('image')
+    setData('image')
     const loadProvider = async () => {
       try {
         // Create a Web3Provider from window.ethereum
@@ -140,4 +140,4 @@ const images = () => {
   )
 }
 
-export default images
+export default Images

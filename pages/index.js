@@ -11,7 +11,7 @@ import axios from "axios";
 
 export default function Home() {
   const { account, setAccount } = useAccount();
-  const [Data, setdata] = useState('home')
+  const [Data, setData] = useState('home')
   const [contract, setContract] = useState(null);
   const [provider, setProvider] = useState(null);
   const [modalOpen, setModalOpen] = useState(false);
